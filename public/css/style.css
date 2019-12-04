@@ -69,15 +69,24 @@ ul.withArrow li{
 	
 }
 ul.withArrow li span{
-	margin-right: 10px;
-	font-weight: 700;
-	color: #93c83f;
-	border: 1px solid;
-	padding: 4px 8px;
-	font-size: 11px;
-	border-radius: 50%;
-	height: 20px;
-	width: 20px;
+	
+margin-right: 10px;
+	
+font-weight: 700;
+	
+color: #93c83f;
+	
+border: 1px solid;
+	
+padding: 4px 8px;
+	
+font-size: 11px;
+	
+border-radius: 50%;
+	
+height: 20px;
+	
+width: 20px;
 }
 .line{
 	width: 20%;
@@ -266,9 +275,12 @@ header  .navbar-nav > li > a {
 	
 }
 .dishes{
-	background: #93c83f;
-	padding: 35px 0;
-	color: #1b1b1b;
+	
+background: #93c83f;
+	
+padding: 35px 0;
+	
+color: #1b1b1b;
 }
 .dropdown-menu li a:hover {
     color: #fff !important;

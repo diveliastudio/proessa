@@ -1,0 +1,29 @@
+{
+  "name": "proessa",
+  "version": "1.0.0",
+  "description": "Proessa Ingeniería",
+  "main": "./bin/index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon ./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diveliastudio/proessa.git"
+  },
+  "author": "Fred Paucar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diveliastudio/proessa/issues"
+  },
+  "homepage": "https://github.com/diveliastudio/proessa#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "nodemailer": "^6.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
