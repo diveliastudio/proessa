@@ -13,6 +13,8 @@ router.get('/contactanos', function (req, res) {
   res.render('contact')
 });
 
+router.use('/mailing', require('./../server/mailing'));
+
 router.get('/consultoria', function (req, res) {
   res.render('pricing')
 });
