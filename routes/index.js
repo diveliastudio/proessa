@@ -19,6 +19,8 @@ router.get('/consultoria', function (req, res) {
   res.render('pricing')
 });
 
+router.use('/curso', require('./../server/curso'));
+
 router.get('/services', function (req, res) {
   res.render('services')
 });

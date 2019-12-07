@@ -1,0 +1,10 @@
+{
+  "one": {
+    "nombre": "Titulo curso numero uno",
+    "profesor_img": "team1.jpg"
+  },
+  "two": {
+    "nombre": "Titulo curso numero dos",
+    "profesor_img": "team2.jpg"
+  }
+}
