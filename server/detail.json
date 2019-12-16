@@ -6,14 +6,37 @@
     "fecha_inicio": "08 de Febrero del 2020",
     "fecha_cierre": "06 de Febrero del 2020",
     "lugar": "Av. Petit Thouars 1775 - Of. 1001 - Lince",
-    "horarios": "",
+    "horarios": [
+      {
+        "dia": "Sábado 08 de Febrero",
+        "hora": "08:00 am - 06:00 pm"
+      },
+      {
+        "dia": "Domingo 09 de Febrero",
+        "hora": "08:00 am - 06:00 pm"
+      }
+    ],
     "profesor": {
-      "datos": "Fulano",
-      "grado": "",
+      "datos": "Primer profe",
+      "grado": "Dr. en Ing de algo",
       "foto": "team1.jpg",
       "cv": "",
       "linkedin": ""
-    }
+    },
+    "temario": [
+      {
+        "titulo": "Tema 1",
+        "desc" : "Descripcion 1 lorem ipsum"
+      },
+      {
+        "titulo": "Tema 2",
+        "desc" : "Descripcion 2 lorem ipsum"
+      },
+      {
+        "titulo": "Tema 3",
+        "desc" : "Descripcion 3 lorem ipsum"
+      }
+    ]
   },
   "two": {
     "nombre": "Invierte.pe",
@@ -22,13 +45,48 @@
     "fecha_inicio": "01 de Febrero del 2020",
     "fecha_cierre": "31 de Enero del 2020",
     "lugar": "Av. Petit Thouars 1775 - Of. 1001 - Lince",
-    "horarios": "",
+    "horarios": [
+      {
+        "dia": "Sábado 01 de Febrero",
+        "hora": "08:00 am - 01:00 pm"
+      },
+      {
+        "dia": "Sábado 08 de Febrero",
+        "hora": "08:00 am - 01:00 pm"
+      },
+      {
+        "dia": "Sábado 15 de Febrero",
+        "hora": "08:00 am - 01:00 pm"
+      },
+      {
+        "dia": "Sábado 22 de Febrero",
+        "hora": "08:00 am - 01:00 pm"
+      },
+      {
+        "dia": "Sábado 29 de Febrero",
+        "hora": "08:00 am - 01:00 pm"
+      }
+    ],
     "profesor": {
-      "datos": "Mengano",
-      "grado": "",
+      "datos": "Segundo profe",
+      "grado": "Mg. en Ing de algo",
       "foto": "team2.jpg",
       "cv": "",
       "linkedin": ""
-    }
+    },
+    "temario": [
+      {
+        "titulo": "Tema A",
+        "desc" : "Descripcion A lorem ipsum"
+      },
+      {
+        "titulo": "Tema B",
+        "desc" : "Descripcion B lorem ipsum"
+      },
+      {
+        "titulo": "Tema C",
+        "desc" : "Descripcion C lorem ipsum"
+      }
+    ]
   }
 }

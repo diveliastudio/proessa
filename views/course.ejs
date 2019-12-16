@@ -27,109 +27,67 @@
 		</div>
 	</section>
 	<div class="container">
-		<div class="about">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="block-heading-two">
-						<h3><span>Temario</span></h3>
-					</div>		
-					<!-- Accordion starts -->
-					<div class="panel-group" id="accordion-alt3">
-						<div class="panel">
-						<!-- Panel heading -->
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseOne-alt3">
-									<i class="fa fa-angle-right"></i> Accordion Heading Text Item # 1
-									</a>
-								</h4>
-							</div>
-							<div id="collapseOne-alt3" class="panel-collapse collapse">
-							<!-- Panel body -->
-								<div class="panel-body">
-									Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-								</div>
-							</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="block-heading-two">
+					<h3><span>Temario</span></h3>
+				</div>		
+				<!-- Accordion starts -->
+				<div class="panel-group" id="accordion-alt3">
+					<% details.temario.forEach(function(topic, idx) { %>
+					<div class="panel">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion-alt3" href="<%= `#collapse${idx}-alt3` %>">
+								<i class="fa fa-angle-right"></i><%= topic.titulo %>
+								</a>
+							</h4>
 						</div>
-						<div class="panel">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseTwo-alt3">
-									<i class="fa fa-angle-right"></i> Accordion Heading Text Item # 2
-									</a>
-								</h4>
-							</div>
-							<div id="collapseTwo-alt3" class="panel-collapse collapse">
-								<div class="panel-body">
-									Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-								</div>
-							</div>
-						</div>
-						<div class="panel">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseThree-alt3">
-									<i class="fa fa-angle-right"></i> Accordion Heading Text Item # 3
-									</a>
-								</h4>
-							</div>
-							<div id="collapseThree-alt3" class="panel-collapse collapse">
-								<div class="panel-body">
-									Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-								</div>
-							</div>
-						</div>
-						<div class="panel">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseFour-alt3">
-									<i class="fa fa-angle-right"></i> Accordion Heading Text Item # 4
-									</a>
-								</h4>
-							</div>
-							<div id="collapseFour-alt3" class="panel-collapse collapse">
-								<div class="panel-body">
-									Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-								</div>
+						<div id="<%= `collapse${idx}-alt3` %>" class="panel-collapse collapse">
+							<div class="panel-body">
+								<%= topic.desc %>
 							</div>
 						</div>
 					</div>
-					<!-- Accordion ends -->
+					<% }); %>
 				</div>
-				<div class="col-md-4">
-					<div class="block-heading-two">
-						<h3><span>Profesor</span></h3>
-					</div>
-					<div class="testimonials">
-						<div class="active item">
-							<blockquote><p><%= details.profesor.cv %></p></blockquote>
-							<div class="carousel-info">
-								<img alt="" src="<%= `img/${details.profesor.foto}` %>" class="pull-left">
-								<div class="pull-left">
-									<span class="testimonials-name"><%= details.profesor.datos %></span>
-									<span class="testimonials-post"><%= details.profesor.grado %></span>
-								</div>
+				<!-- Accordion ends -->
+			</div>
+			<div class="col-md-4">
+				<div class="block-heading-two">
+					<h3><span>Profesor</span></h3>
+				</div>
+				<div class="testimonials">
+					<div class="active item">
+						<blockquote><p><%= details.profesor.cv %></p></blockquote>
+						<div class="carousel-info">
+							<img alt="" src="<%= `img/${details.profesor.foto}` %>" class="pull-left">
+							<div class="pull-left">
+								<span class="testimonials-name"><%= details.profesor.datos %></span>
+								<span class="testimonials-post"><%= details.profesor.grado %></span>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="block-heading-two">
-						<h3><span>Detalles</span></h3>
-					</div>
-					<div class="detail_assig">
-						<i class="material-icons">date_range</i>&nbsp;<h5>Inicio de clases</h5>
-						<br>&nbsp;&nbsp;&nbsp;&nbsp;<span><%= details.fecha_inicio %></span>
-						<br>
-						<i class="material-icons">timelapse</i>&nbsp;<h5>Cierre de inscripciones</h5>
-						<br>&nbsp;&nbsp;&nbsp;&nbsp;<span><%= details.fecha_cierre %></span>
-						<br>
-						<i class="material-icons">apartment</i>&nbsp;<h5>Lugar</h5>
-						<br>&nbsp;&nbsp;&nbsp;&nbsp;<span><%= details.lugar %></span>
-						<br>
-						<i class="material-icons">assignment</i>&nbsp;<h5>Horarios</h5>
-						<br>&nbsp;&nbsp;&nbsp;&nbsp;<span><%= details.horarios %></span>
-					</div>
+			</div>
+			<div class="col-md-4">
+				<div class="block-heading-two">
+					<h3><span>Detalles</span></h3>
+				</div>
+				<div class="detail_assig">
+					<i class="material-icons">date_range</i>&nbsp;<h5>Inicio de clases</h5>
+					<br>&nbsp;&nbsp;<span><%= details.fecha_inicio %></span>
+					<br><br>
+					<i class="material-icons">timelapse</i>&nbsp;<h5>Cierre de inscripciones</h5>
+					<br>&nbsp;&nbsp;<span><%= details.fecha_cierre %></span>
+					<br><br>
+					<i class="material-icons">apartment</i>&nbsp;<h5>Lugar</h5>
+					<br>&nbsp;&nbsp;<span><%= details.lugar %></span>
+					<br><br>
+					<i class="material-icons">assignment</i>&nbsp;<h5>Horarios</h5>
+					<% details.horarios.forEach(function(sched) { %>
+					<br>&nbsp;&nbsp;<span><%= sched.dia %></span> : <span class="sched_hour"><%= sched.hora %></span>
+					<% }); %>
 				</div>
 			</div>
 		</div>
@@ -150,6 +108,9 @@
 	.detail_assig h5 {
 		display: inline-block;
 		text-transform: uppercase;
+	}
+	.detail_assig .sched_hour {
+		font-size: 1.2rem;;
 	}
 </style>
 
