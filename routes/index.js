@@ -1,28 +1,31 @@
 const express = require('express'),
-  router = express.Router();
+  router = express.Router(),
+  path = require('path');
+
+const base = path.join(__dirname, '/../')
 
 router.get('/', function (req, res) {
   res.render('index')
 });
 
-router.get('/nosotros', function (req, res) {
-  res.render('about')
-});
+router.use('/mailing', require(base + 'server/mailing'));
+
+router.use('/curso', require(base + 'server/curso'));
 
 router.get('/contactanos', function (req, res) {
   res.render('contact')
 });
 
-router.use('/mailing', require('./../server/mailing'));
+// router.get('/nosotros', function (req, res) {
+//   res.render('about')
+// });
 
-router.get('/consultoria', function (req, res) {
-  res.render('pricing')
-});
+// router.get('/consultoria', function (req, res) {
+//   res.render('pricing')
+// });
 
-router.use('/curso', require('./../server/curso'));
-
-router.get('/services', function (req, res) {
-  res.render('services')
-});
+// router.get('/services', function (req, res) {
+//   res.render('services')
+// });
 
 module.exports = router;
