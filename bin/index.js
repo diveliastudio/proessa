@@ -3,7 +3,8 @@ const express = require('express'),
   path = require('path'),
   routes = require('../routes'),
   bodyParser = require('body-parser');
-const host = process.env.HOST || '206.189.212.127',
+// const host = process.env.HOST || '206.189.212.127',
+const host = process.env.HOST || 'localhost',
   port = process.env.PORT || 3000;
 
 const app = express();
