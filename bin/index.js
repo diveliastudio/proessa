@@ -4,7 +4,7 @@ const express = require('express'),
   routes = require('../routes'),
   bodyParser = require('body-parser');
 const host = process.env.HOST || '127.0.0.1',
-  port = process.env.POST || 3000;
+  port = process.env.PORT || 3000;
 
 const app = express();
 
