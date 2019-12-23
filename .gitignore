@@ -1,5 +1,8 @@
 # MacOS files
 .DS_Store
 
+# Shit dir
+.idea
+
 # Node modules
 node_modules/
