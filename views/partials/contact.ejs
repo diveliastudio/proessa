@@ -1,0 +1,99 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="about-logo">
+      <h3><%= title %></h3>
+      <!-- <p>Responderemos a la brevedad posible</p> -->
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+  <!-- Form itself -->
+  <form name="sentMessage" id="contactForm">
+    <div class="input-field">
+      <input type="text" name="name" class="form-control" id="Nombre" required data-validation-required-message="Por favor rellene su nombre"/>
+      <label for="name" class="">Nombre</label>
+      <p class="help-block"></p>
+    </div>
+    <div class="input-field"> 
+      <input type="email" name="email" class="form-control" id="Correo" required data-validation-required-message="Por favor ingrese su correo"/>
+      <label for="name" class="">Correo</label>
+    </div>
+    <div class="input-field"> 
+      <textarea rows="10" cols="100" required name="msg" id="Mensaje" class="form-control materialize-textarea" idation-required-message="Por favor ingrese su mensaje" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
+      <label for="name" class="">Mensaje</label> 
+    </div>
+    <div class="input-field">
+      <input type="hidden" name="origen" id="Origen" class="form-control" value="<%= field %>">
+    </div>
+
+    <div id="success"> </div> <!-- For success/fail messages -->
+    <button type="submit" id="subForm" class="btn btn-primary waves-effect waves-dark pull-right">Enviar</button><br />
+  </form>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('contactForm')
+  const btnForm = document.getElementById('subForm')
+
+  // validating fields
+  const check = async function(fields) {
+    let empty = [], values = []
+    for (let i = 0; i < fields.length; i++) {
+      if (fields[i].value.trim().length == 0) {
+        empty.push(fields[i].id)
+      } else {
+        values.push(fields[i].value.trim())
+      }
+    }
+    return { empty, values }
+  }
+
+  // sending mailing
+  form.addEventListener('submit', async function(e){
+    e.preventDefault()
+    btnForm.disabled = true;
+    btnForm.innerHTML = 'ENVIANDO...';
+
+    let fields = form.getElementsByClassName('form-control')
+    // validar info
+    let rpta = await check(fields)
+    if (rpta.empty.length != 0) {
+      let str = rpta.empty.join()
+      Swal.fire({
+        title: 'Ups...',
+        text: `Le falto rellenar: ${str}`,
+        icon: 'error',
+        confirmButtonText: 'Completar'
+      })
+    } else {
+      let { data } = await axios.post('/mailing', {
+        name: rpta.values[0],
+        email: rpta.values[1],
+        comment: rpta.values[2],
+        origen: rpta.values[3]
+      })
+      if (data.status == 'ok') {
+        Swal.fire({
+          icon: 'success',
+          title: 'Correo enviado. Responderemos a la brevedad posible',
+          showConfirmButton: false,
+          timer: 3500
+        })
+      } else {
+        Swal.fire({
+          title: 'Ups...',
+          text: 'Hubo un problema durante el envío. Inténtelo más tarde nuevamente.',
+          icon: 'error',
+          confirmButtonText: 'Continuar'
+        })
+      }
+      btnForm.disabled = false;
+      btnForm.innerHTML = 'ENVIAR';
+      form.reset();
+    }
+
+  })
+</script>

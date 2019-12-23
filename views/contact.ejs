@@ -4,14 +4,14 @@
 	<%- include('partials/header') -%>
 </head>
 <body>
-<div id="wrapper"> 
-	
+<div id="wrapper">
+
 	<%- include('partials/navbar', {active: 'contacto'}) -%>
-	
+
 	<%- include('partials/brand', {title: 'Contacto'}) -%>
 
 	<section id="content">
-	
+
 	<div class="container">
 
 		<div class="row">
@@ -33,13 +33,13 @@
 					<label for="name" class="">Nombre</label>
 					<p class="help-block"></p>
 				</div>
-				<div class="input-field"> 
+				<div class="input-field">
 					<input type="email" name="email" class="form-control" id="email" required data-validation-required-message="Por favor ingrese su correo"/>
 					<label for="name" class="">Correo</label>
 				</div>
-				<div class="input-field"> 
+				<div class="input-field">
 					<textarea rows="10" cols="100" required class="form-control materialize-textarea" idation-required-message="Por favor ingrese su mensaje" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
-					<label for="name" class="">Mensaje</label> 
+					<label for="name" class="">Mensaje</label>
 				</div>
 
 				<div id="success"> </div> <!-- For success/fail messages -->

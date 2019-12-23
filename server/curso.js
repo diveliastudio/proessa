@@ -24,9 +24,6 @@ router.get('/', function (req, res) {
   } else {
     res.redirect('/')
   }
-  // console.log(data)
-  // console.log(req.query)
-  // console.log(curso)
 });
 
 module.exports = router;
