@@ -3,8 +3,8 @@ const express = require('express'),
   nodemailer = require('nodemailer');
 
 // change this later
-// const EMAIL_RECEIVER = 'info@proessaingenieria.com';
-const EMAIL_RECEIVER = 'fred.paucarespinoza@gmail.com';
+const EMAIL_RECEIVER = 'info@proessaingenieria.com';
+
 const EMAIL_SENDER = 'proessaingenieria@gmail.com';
 // dont change password
 // const SENDER_PASS = 'AagviXJ0A9cm';
