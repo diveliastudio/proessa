@@ -4,8 +4,8 @@
   "description": "Proessa Ingeniería",
   "main": "./bin/index.js",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon ./bin/index.js",
-    "prod": "HOST=206.189.212.127 node ./bin/index.js"
+    "start": "node ./bin/index.js",
+    "deploy": "gcloud app deploy"
   },
   "repository": {
     "type": "git",
@@ -22,9 +22,13 @@
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "helmet": "^3.21.2",
-    "nodemailer": "^6.4.0"
+    "nodemailer": "^6.4.0",
+    "@google-cloud/datastore": "^1.4.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.1"
+  },
+  "bin": {
+    "proessa": "index.js"
   }
 }

@@ -5,11 +5,14 @@ const express = require('express'),
   bodyParser = require('body-parser');
 // const host = process.env.HOST || '206.189.212.127',
 const host = process.env.HOST || 'localhost',
-  port = process.env.PORT || 3000;
+  port = process.env.PORT || 8080;
 
 const app = express();
 
 const generalPath = path.join(__dirname, '../')
+
+// Your Google Cloud Platform project ID
+const projectId = 'warm-practice-262903';
 
 app.set('port', port);
 ;
@@ -32,8 +35,7 @@ function start() {
   app.use(routes)
 
   // server
-  app.listen(port, host)
-  console.log(`Server listening on http://${host}:${port}`)
+  app.listen(8080)
 }
 
 start();

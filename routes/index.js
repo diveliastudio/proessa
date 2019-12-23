@@ -16,6 +16,10 @@ router.get('/contactanos', function (req, res) {
   res.render('contact')
 });
 
+router.get('/nosotros', function (req, res) {
+  res.render('nosotros')
+});
+
 // router.get('/nosotros', function (req, res) {
 //   res.render('about')
 // });

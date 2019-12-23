@@ -92,7 +92,7 @@ width: 20px;
 .line{
 	width: 20%;
 	height: 2px;
-	background: #3C98C9;
+	background: #003962;
 	margin: 0 auto;
 	margin-bottom: 20px;
 }
@@ -942,12 +942,12 @@ background: #32c8de;
 	margin-bottom:20px;
 }
 .info-blocks {margin-bottom: 15px;/* background: #efefef; */}
-.info-blocks i.icon-info-blocks {/* float: left; */color: #3C98C9;font-size: 48px;min-width: 50px;margin-bottom: 15px;text-align: center;/* background: #ffffff; */width: 72px;/* height: 72px; *//* padding-top: 21px; *//* border: 1px solid #e0e0e0; *//* line-height: 75px; */width: 100%;}
+.info-blocks i.icon-info-blocks {/* float: left; */color: #003962;font-size: 48px;min-width: 50px;margin-bottom: 15px;text-align: center;/* background: #ffffff; */width: 72px;/* height: 72px; *//* padding-top: 21px; *//* border: 1px solid #e0e0e0; *//* line-height: 75px; */width: 100%;}
 .info-blocks .info-blocks-in {padding: 46px 22px;overflow: hidden;border: 1px solid #dedede;text-align: center;background: #fff;}
 .info-blocks .info-blocks-in h3 {color: #202020;font-size: 22px;line-height: 28px;margin:0px;margin-bottom: 8px;/* font-weight: bold; */}
 .info-blocks .info-blocks-in p {font-size: 14px;}
 .info-blocks .info-blocks-in:hover{
-	border: 1px solid #3C98C9;
+	border: 1px solid #003962;
 }  
 blockquote {
 	font-size:16px;

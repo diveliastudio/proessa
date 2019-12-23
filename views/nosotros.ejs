@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<%- include('partials/header') -%>
+</head>
+<body>
+<div id="wrapper" class="home-page"> 
+	
+	<%- include('partials/navbar', {active: 'index'}) -%>
+	
+	<!-- Slider -->
+	<section id="banner">
+		<div id="main-slider" class="flexslider">
+			<ul class="slides">
+				<li>
+					<img src="img/slides/3.jpg" alt="" />
+					<div class="flex-caption" style="font-family: 'Righteous', cursive;">
+						<h3>Profesionales en Educación e Ingeniería para el sector Construcción y Saneamiento</h3>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- end slider -->
+
+
+	<section id="about" class="section-padding gray-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>Quiénes somos</h2>
+						<p>Somos un equipo de profesionales enfocados en brindar soluciones para el sector construcción y saneamiento en el país, brindando servicios de consultoría y capacitación especializados a profesionales y organizaciones, tanto del sector público como privado.
+						<br>Contamos con un staff de profesionales altamente capacitados para brindarte la mejor información que hará que apliques tus nuevos conocimientos desde el primer día. 
+						<br>Nuestra meta, compromiso y principal responsabilidad es hacer de cada alumno el mejor profesional, y brindar la mejor solución técnica en cada proyecto desarrollado.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="about-text">
+						<ul class="withArrow">
+							<li>
+								<span class="fa fa-angle-right"></span>Misión y motivación<br>
+								<p>Nuestro trabajo está centrado en dos ejes principales:
+									<br><i class="material-icons">chevron_right</i>Reducir la brecha entre la demanda y la oferta de profesionales altamente calificados para afrontar las necesidades del sector construcción y saneamiento.
+									<br><i class="material-icons">chevron_right</i>Brindar las mejores soluciones técnicas, económicas y socio-ambientales para el desarrollo sostenible del país en temas de construccion y saneamiento.</p>
+							</li>
+							<li>
+								<span class="fa fa-angle-right"></span>Visión<br>
+								<p>Nuestra visión es la de posicionarnos como la mejor empresa a nivel nacional, en consultoría y capacitaciones en el sector Construcción y Saneamiento; destacando por nuestra alta calidad académica y la aplicabilidad de los conocimientos impartidos en nuestras aulas y nuestros altos estándares de calidad en nuestros proyectos.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="about-image">
+						<img src="img/nosotros.jpg" alt="About Images">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<%- include('partials/footer') -%>
+	
+</div>
+<a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
+
+<%- include('partials/scripts') -%>
+
+<style>
+	.flex-caption {
+		width: 100%;
+		background-color: #0000007a;
+		padding: 2px 40px;
+	}
+	.flex-caption h3 {
+		font-size: 48px;
+	}
+	#about .withArrow p {
+		margin-left: 20px;
+	}
+	#about .withArrow p i {
+		vertical-align: bottom;
+		font-size: 2rem;
+	}
+	@media (max-width: 767px) {
+		.flex-caption h3 {
+			font-size: 28px;
+		}
+	}
+</style>
+
+</body>
+</html>
