@@ -9,37 +9,59 @@
     "horarios": [
       {
         "dia": "Sábado 08 de Febrero",
-        "hora": "08:00 am - 06:00 pm"
+        "hora": "09:00 am - 05:00 pm"
       },
       {
         "dia": "Domingo 09 de Febrero",
-        "hora": "08:00 am - 06:00 pm"
+        "hora": "09:00 am - 05:00 pm"
       }
     ],
-    "profesor": {
-      "datos": "Primer profe",
-      "grado": "Dr. en Ing de algo",
-      "foto": "team1.jpg",
-      "cv": "",
-      "linkedin": ""
-    },
+    "profesor": [
+      {
+        "datos": "José Carlos Castañeda Díaz",
+        "grado": "",
+        "foto": "docenteBombeo.jpg",
+        "cv": "Ingeniero Mecánico Electricista y Magíster en Ingeniería de Control y Automatización por la PUCP. Experto en manejo de diferentes softwares de diseño para aplicaciones de ingeniería. Cuenta con amplia experiencia en mantenimiento de Bombas, ha sido Jefe de Prácticas y de Laboratorio en la Universidad de Piura, Jefe de Proyecto Diseño y Construcción del Nuevo Laboratorio de pruebas de Bombas en HIDROSTAL, Consultor independiente, y responsable del servicio técnico de Sistemas de Bombeo del grupo FADESA y capacitador en temas de diseño, selección, instalación, operación y mantenimiento de sistemas de bombeo en GRUNDFOS – PERÚ.",
+        "linkedin": "https://www.linkedin.com/in/josé-carlos-castañeda-díaz-6a71275a/"
+      }
+    ],
     "temario": [
       {
-        "titulo": "Tema 1",
-        "desc" : "Descripcion 1 lorem ipsum"
+        "titulo": "Parte teórica (día 1)",
+        "desc" : [
+          "Tipos de bombas",
+          "Principios de funcionamiento",
+          "Determinación de la aspiración",
+          "NPSH disponible y requerido",
+          "Curvas del sistema",
+          "Bombas en serie y paralelo",
+          "Cálculo/diseño de sistemas de bombeo",
+          "Regulación y ahorro de energía",
+          "Instalación y montaje",
+          "Pruebas en sistemas de bombeo",
+          "Detección de fallas"
+        ]
       },
       {
-        "titulo": "Tema 2",
-        "desc" : "Descripcion 2 lorem ipsum"
-      },
-      {
-        "titulo": "Tema 3",
-        "desc" : "Descripcion 3 lorem ipsum"
+        "titulo": "Parte práctica (día 2)",
+        "desc" : [
+          "Selección de bombas para los diferentes usos en el sector saneamiento",
+          "Bombeo de insumos químicos en PTAPs",
+          "Bombeo de agua residual",
+          "Bombeo de lodos en PTAP y PTAR",
+          "Captaciones de agua dulce, dura y salada",
+          "Booster en sistemas de agua",
+          "Bombeo en sistemas contra incendio",
+          "Bombeo en instalaciones sanitarias en edificaciones",
+          "Operación y  mantenimiento",
+          "Instalación de bombas",
+          "Consideraciones especiales"
+        ]
       }
     ]
   },
   "two": {
-    "nombre": "Invierte.pe",
+    "nombre": "Programación Multianual y Gestión de Inversiones Públicas en Formulación y Evaluación el Marco de Invierte.pe",
     "descripcion": "Nuestro país no ha dejado de crecer en inversiones. Por ello el gobierno ha tomado medidas encaminadas a agilizar y simplificar los procesos de Inversión Pública y mantenerse al ritmo de este crecimiento. El antiguo Sistema Nacional de Inversión Pública (SNIP) fue un gran avance en América Latina, pero ha quedado desfasado. Para superarlo ha entrado en vigencia el nuevo Sistema Nacional de Programación Multianual y Gestión de Inversiones, conocido como INVIERTE.PE. El cual ha establecido nuevas formas y procedimientos de obligatorio cumplimiento por parte de las entidades y empresas del sector público, para agilizar, flexibilizar y rentabilizar la ejecución de proyectos de inversión. Este curso permitirá al participante actualizarse y/o aprender sobre el sistema INVIERTE.PE, a fin de fortalecer sus competencias profesionales para contribuir a la optimización de las inversiones públicas.",
     "img": "invierte.jpg",
     "fecha_inicio": "01 de Febrero del 2020",
@@ -67,25 +89,55 @@
         "hora": "08:00 am - 01:00 pm"
       }
     ],
-    "profesor": {
-      "datos": "Segundo profe",
-      "grado": "Mg. en Ing de algo",
-      "foto": "team2.jpg",
-      "cv": "",
-      "linkedin": ""
-    },
+    "profesor": [
+      {
+        "datos": "Luis Alberto Pelaez Contti",
+        "grado": "Mag. Econ.",
+        "foto": "invierteLuis.jpg",
+        "cv": "Magíster en Gestión Pública y Economista con experiencia en inversión pública y privada, Presupuesto público y Contrataciones con el Estado. Se ha desempeñado como jefe de la Oficina de Programación e Inversiones (OPI) de diversas municipalidades y universidades, asimismo como Gerente de Administración y Finanzas, Planificación y Presupuesto, responsable de la Unidad Formuladora de la Municipalidad Provincial del Callao y profesor en las Maestrías de Educación con mención en Gestión Pública y Economía con mención en Proyectos de Inversión en la Universidad San Pedro.",
+        "linkedin": "https://www.linkedin.com/in/luis-pelaez-contti-mgp-45b38b23/"
+      },
+      {
+        "datos": "Milton Oroche Carbajal",
+        "grado": "Mag. Econ.",
+        "foto": "invierteMilton.jpg",
+        "cv": "Economista y Magister en Finanzas de la Universidad Nacional del Callao, profesor Asociado e Investigador en esta casa de estudios y, con estudios en la Universidad de Los Andes-Colombia. Su línea de trabajo como docente universitario está relacionada con la Formulación de Proyectos de Inversión, Marketing Empresarial e Investigación de Mercados. Ha laborado en la Jefatura del área de Presupuesto y Estadística en CSM ALASPE, como Inspector Económico en las UGELs de Lima Metropolitana, la Gerencia en Open Market Perú, Director del Centro de Extensión y Proyección Universitaria. Asesor de proyectos y planes de negocios a nivel personal y corporativo.",
+        "linkedin": "https://www.linkedin.com/in/milton-oroche-carbajal-82026964/"
+      }
+    ],
     "temario": [
       {
-        "titulo": "Tema A",
-        "desc" : "Descripcion A lorem ipsum"
+        "titulo": "El sistema de programación multianual y gestión de la inversión pública",
+        "desc" : [
+          "Los ciclos de la inversión pública en cualquier nivel del estado",
+          "Criterios para la Programación Multianual de Inversiones",
+          "Priorización de la cartera de inversiones del PMI",
+          "Casos prácticos"
+        ]
       },
       {
-        "titulo": "Tema B",
-        "desc" : "Descripcion B lorem ipsum"
+        "titulo": "Formulación de proyectos de inversión pública",
+        "desc" : [
+          "Fichas técnicas específicas para Proyectos de baja y mediana complejidad",
+          "Datos Generales: Denominación del Proyecto, conocimiento de la funcionalidad de las unidades formuladoras y ejecutoras",
+          "Identificación de proyectos de inversión pública a nivel de perfil: Marco de referencia, Diagnostico de la Situación Actual, Definición del Problema: Causas y Efecto, Objetivo del Proyecto, Alternativas de Solución",
+          "Tés de riesgo o incertidumbre de un proyecto de inversión  para identificar su clasificación de proyecto según nivel de riesgo",
+          "Formulación de proyectos de inversión pública en los diferentes niveles de inversión: Horizonte de Evaluación, Análisis de demanda, Análisis de oferta, Balance oferta- demanda y Costos",
+          "Alcances técnicos sobre contenidos de la IOARRs, y aprobación en el Sistema del Banco de Inversiones",
+          "Casos prácticos"
+        ]
       },
       {
-        "titulo": "Tema C",
-        "desc" : "Descripcion C lorem ipsum"
+        "titulo": "Evaluación de proyectos de inversión pública",
+        "desc" : [
+          "Evaluación de proyectos de inversión pública e inversiones no PIP IOARRs en los diferentes niveles de inversión",
+          "Evaluación social",
+          "Sostenibilidad",
+          "Gestión",
+          "Impacto Ambiental",
+          "Marco Lógico",
+          "Casos prácticos"
+        ]
       }
     ]
   }

@@ -19,7 +19,7 @@
 				</div>
 				<div class="col-md-6">
 					<div class="about-text">
-						<h3><span class="color">Descripción</span></h3>
+						<!-- <h3><span class="color">Descripción</span></h3> -->
 						<p><%= details.descripcion %></p>
 					</div>
 				</div>
@@ -45,7 +45,11 @@
 						</div>
 						<div id="<%= `collapse${idx}-alt3` %>" class="panel-collapse collapse">
 							<div class="panel-body">
-								<%= topic.desc %>
+								<ul class="topics_detail">
+								<% topic.desc.forEach(function(it) { %>
+									<li><%= it %></li>
+								<% }); %>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -55,20 +59,23 @@
 			</div>
 			<div class="col-md-4">
 				<div class="block-heading-two">
-					<h3><span>Profesor</span></h3>
+					<h3><span><%= (details.profesor.length > 1) ? 'Profesores' : 'Profesor' %></span></h3>
 				</div>
+				<% details.profesor.forEach(function(teach) { %>
 				<div class="testimonials">
 					<div class="active item">
-						<blockquote><p><%= details.profesor.cv %></p></blockquote>
+						<blockquote><p><%= teach.cv %></p></blockquote>
 						<div class="carousel-info">
-							<img alt="" src="<%= `img/${details.profesor.foto}` %>" class="pull-left">
+							<img alt="" src="<%= `img/cursos/${teach.foto}` %>" class="pull-left">
 							<div class="pull-left">
-								<span class="testimonials-name"><%= details.profesor.datos %></span>
-								<span class="testimonials-post"><%= details.profesor.grado %></span>
+								<a href="<%= teach.linkedin %>" target="_blank"><span class="testimonials-name"><%= teach.datos %></span></a>
+								<span class="testimonials-post"><%= teach.grado %></span>
 							</div>
 						</div>
 					</div>
 				</div>
+				<br>
+				<% }); %>
 			</div>
 			<div class="col-md-4">
 				<div class="block-heading-two">
@@ -114,6 +121,14 @@
 	}
 	.detail_assig .sched_hour {
 		font-size: 1.2rem;;
+	}
+	ul.topics_detail li {
+		list-style-type: square;
+		font-size: 11px;
+		margin-left: 1rem;
+	}
+	.testimonials blockquote {
+		border: 1px solid #e3e3e3;
 	}
 </style>
 
