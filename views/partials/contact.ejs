@@ -1,28 +1,45 @@
-<div class="row">
-  <div class="col-md-8 col-md-offset-2">
-    <div class="about-logo">
-      <h3><%= title %></h3>
-      <!-- <p>Responderemos a la brevedad posible</p> -->
-    </div>
-  </div>
-</div>
+<!-- Map Section Start -->
+    <section id="map-area" style="margin-top: 100px;">
+      <div class="container-fluid">
+        <div class="row" style="margin-bottom:0px;">
+          <div class="col-12 padding-0">
+            <object style="border:0; height: 550px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4412705614386!2d-77.0357816851871!3d-12.081914391443897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f4ccf70497%3A0x3117ed68eefaf485!2s1001%2C%20Av.%20Petit%20Thouars%201775%2C%20Lince%2015046!5e0!3m2!1ses-419!2spe!4v1577842113001!5m2!1ses-419!2spe"></object>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Map Section End -->
 
-<div class="row">
-  <div class="col-md-8 col-md-offset-2">
-  <!-- Form itself -->
-  <form name="sentMessage" id="contactForm">
+
+
+    <!-- Contact Section Start -->
+    <section id="contact">
+      <div class="contact-form">
+        <div class="container">
+          <div class="row justify-content-center" style="margin-bottom:0px;margin-right: -40px;margin-left: -40px;">
+            <div class="offset-top">
+              <div class="col-lg-12 col-md-12 col-xs-12">
+                <div class="contact-block wow fadeInUp" data-wow-delay="0.2s">
+                  <div class="sub-title text-center">
+                  <h3><%= title %></h3>
+                  <strong> <p> Llámanos o escríbenos:</p></strong>
+                  </div>
+
+
+                    <div class="row" style="margin-bottom:0px;margin-right:100px;margin-left:100px;">
+<form name="sentMessage" id="contactForm">
     <div class="input-field">
       <input type="text" name="name" class="form-control" id="Nombre" required data-validation-required-message="Por favor rellene su nombre"/>
       <label for="name" class="">Nombre</label>
       <p class="help-block"></p>
     </div>
-    <div class="input-field"> 
+    <div class="input-field">
       <input type="email" name="email" class="form-control" id="Correo" required data-validation-required-message="Por favor ingrese su correo"/>
       <label for="name" class="">Correo</label>
     </div>
-    <div class="input-field"> 
+    <div class="input-field">
       <textarea rows="10" cols="100" required name="msg" id="Mensaje" class="form-control materialize-textarea" idation-required-message="Por favor ingrese su mensaje" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
-      <label for="name" class="">Mensaje</label> 
+      <label for="name" class="">Mensaje</label>
     </div>
     <div class="input-field">
       <input type="hidden" name="origen" id="Origen" class="form-control" value="<%= field %>">
@@ -31,8 +48,17 @@
     <div id="success"> </div> <!-- For success/fail messages -->
     <button type="submit" id="subForm" class="btn btn-primary waves-effect waves-dark pull-right">Enviar</button><br />
   </form>
-  </div>
-</div>
+
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
 
 <script>
   const form = document.getElementById('contactForm')
