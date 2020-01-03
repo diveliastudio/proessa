@@ -15,12 +15,12 @@
 		<div class="container">
 			<div class="row showcase-section">
 				<div class="col-md-6" >
-					<img src="<%= `img/cursos/${details.img}` %>" style="max-width: 500px;" alt="Docente fotografía">
+					<img src="<%= `img/cursos/${details.img}` %>" class="imgcurso" alt="Imagen Referencial Curso">
 				</div>
 				<div class="col-md-6">
 					<div class="about-text">
 						<!-- <h3><span class="color">Descripción</span></h3> -->
-						<p><%= details.descripcion %></p>
+						<p style="text-align:justify"><%= details.descripcion %></p>
 					</div>
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 				</div>
 				<% details.profesor.forEach(function(teach) { %>
 				<div class="testimonials">
-					<div class="active item">
+					<div class="active item" style="text-align:justify;">
 						<blockquote><p><%= teach.cv %></p></blockquote>
 						<div class="carousel-info">
 							<img alt="" src="<%= `img/cursos/${teach.foto}` %>" class="pull-left">
@@ -85,9 +85,6 @@
 					<i class="material-icons">date_range</i>&nbsp;<h5>Inicio de clases</h5>
 					<br>&nbsp;&nbsp;<span><%= details.fecha_inicio %></span>
 					<br><br>
-					<i class="material-icons">timelapse</i>&nbsp;<h5>Cierre de inscripciones</h5>
-					<br>&nbsp;&nbsp;<span><%= details.fecha_cierre %></span>
-					<br><br>
 					<i class="material-icons">apartment</i>&nbsp;<h5>Lugar</h5>
 					<br>&nbsp;&nbsp;<span><%= details.lugar %></span>
 					<br><br>
@@ -95,14 +92,21 @@
 					<% details.horarios.forEach(function(sched) { %>
 					<br>&nbsp;&nbsp;<span><%= sched.dia %></span> : <span class="sched_hour"><%= sched.hora %></span>
 					<% }); %>
+					<br><br>
+					<i class="material-icons">money</i>&nbsp;<h5>Inversión</h5>
+					<% details.inversion.forEach(function(cost) { %>
+					<br>&nbsp;&nbsp;<span><%= cost.tipo %></span> : <span class="sched_hour"><%= cost.monto %></span>
+					<% }); %>
+					<br><br>
 				</div>
+				<br><br>
+				<a href="<%= details.inscripcion %>"><button target="_blank" class="btn btn-primary waves-effect waves-dark pull-right" style="width:300px;">Inscribirse</button></a> <br><br>
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<%- include('partials/contact', {field: details.nombre, title: 'Escríbenos'}) %>
-	</div>
 </section>
+
+<%- include('partials/contact', {field: 'home', title: 'Envíanos un mensaje'}) %>
 
 <%- include('partials/footer') -%>
 

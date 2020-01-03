@@ -27,6 +27,22 @@
 			</ul>
 		</div>
 	</section>
+
+	<section id="about" class="section-padding gray-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>Quiénes somos</h2>
+						<p>Somos un equipo de profesionales enfocados en brindar soluciones para el sector construcción y saneamiento en el país, brindando servicios de consultoría y capacitación especializados a profesionales y organizaciones, tanto del sector público como privado.
+						<br>Contamos con un staff de profesionales altamente capacitados para brindarte la mejor información que hará que apliques tus nuevos conocimientos desde el primer día . . .</p>
+						<a class="waves-effect waves-dark" href="/nosotros"> -> Saber más</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- end slider -->
 	<section id="content"> 
 	<div class="container">
@@ -69,47 +85,53 @@
 	</div>
 	</section>
 
-	<section id="about" class="section-padding gray-bg">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-title text-center">
-						<h2>Quiénes somos</h2>
-						<p>Somos un equipo de profesionales enfocados en brindar soluciones para el sector construcción y saneamiento en el país, brindando servicios de consultoría y capacitación especializados a profesionales y organizaciones, tanto del sector público como privado.
-						<br>Contamos con un staff de profesionales altamente capacitados para brindarte la mejor información que hará que apliques tus nuevos conocimientos desde el primer día. 
-						<br>Nuestra meta, compromiso y principal responsabilidad es hacer de cada alumno el mejor profesional, y brindar la mejor solución técnica en cada proyecto desarrollado.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<div class="about-text">
-						<ul class="withArrow">
-							<li>
-								<span class="fa fa-angle-right"></span>Misión y motivación<br>
-								<p>Nuestro trabajo está centrado en dos ejes principales:
-									<br><i class="material-icons">chevron_right</i>Reducir la brecha entre la demanda y la oferta de profesionales altamente calificados para afrontar las necesidades del sector construcción y saneamiento.
-									<br><i class="material-icons">chevron_right</i>Brindar las mejores soluciones técnicas, económicas y socio-ambientales para el desarrollo sostenible del país en temas de construccion y saneamiento.</p>
-							</li>
-							<li>
-								<span class="fa fa-angle-right"></span>Visión<br>
-								<p>Nuestra visión es la de posicionarnos como la mejor empresa a nivel nacional, en consultoría y capacitaciones en el sector Construcción y Saneamiento; destacando por nuestra alta calidad académica y la aplicabilidad de los conocimientos impartidos en nuestras aulas y nuestros altos estándares de calidad en nuestros proyectos.</p>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="about-image">
-						<img src="img/nosotros.jpg" alt="About Images">
-					</div>
-				</div>
-			</div>
+<section id="team" class="section">
+      <div class="container">
+        <div class="aligncenter">
+			<h2 class="aligncenter">CURSOS RECIENTES</h2>
 		</div>
-	</section>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="single-team">
+              <div class="team-thumb">
+                <a href="/curso?slug=1" target="_blank" ><img src="img/slides/1.jpg" alt=""></a>
+              </div>
+              <div class="team-details">
+                <div class="team-inner">
+                  <strong><h4 class="team-title" > Diseño de sistemas de bombeo aplicados a saneamiento</h4></strong><br/>
+                  <p style="text-align:justify;">En los proyectos de agua potable, alcantarillado e infraestructura en saneamiento, usualmente se requieren...</p><br>
+                  <strong><p>Fecha Inicio: 08 de Febrero del 2020</p></strong><br/><br/>
+                  <a href="/curso?slug=1"><button target="_blank" class="btn btn-primary waves-effect waves-dark pull-right">Ver más</button></a><br/><br/>
+                </div>
+              </div>
+            </div>
+          </div>
 
-	<section id="contact" class="container">
-		<%- include('partials/contact', {field: 'home', title: 'Envíanos un mensaje'}) %>
-	</section>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="single-team">
+              <div class="team-thumb">
+                <a href="/curso?slug=2" target="_blank"><img src="img/slides/2.jpg" alt=""></a>
+              </div>
+              <div class="team-details">
+                <div class="team-inner">
+                  <strong><h4 class="team-title" >Invierte.pe</h4></strong><br/>
+                  <p style="text-align:justify;">Programación Multianual y Gestión de Inversiones Públicas en Formulación y Evaluación el Marco de Invierte.pe</p><br>
+                  <strong><p>Fecha Inicio: 01 de Febrero del 2020</p></strong><br/><br/>
+                  <a href="/curso?slug=2" ><button target="_blank" class="btn btn-primary waves-effect waves-dark pull-right">Ver más</button></a><br/><br/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Team section End -->
+
+
+	<%- include('partials/contact', {field: 'home', title: 'Envíanos un mensaje'}) %>
+
+
 	
 	<%- include('partials/footer') -%>
 	

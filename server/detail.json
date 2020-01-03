@@ -6,6 +6,7 @@
     "fecha_inicio": "08 de Febrero del 2020",
     "fecha_cierre": "06 de Febrero del 2020",
     "lugar": "Av. Petit Thouars 1775 - Of. 1001 - Lince",
+    "inscripcion": "https://forms.gle/LQqWfK7Ekn4VaBQr9",
     "horarios": [
       {
         "dia": "Sábado 08 de Febrero",
@@ -14,6 +15,16 @@
       {
         "dia": "Domingo 09 de Febrero",
         "hora": "09:00 am - 05:00 pm"
+      }
+    ],
+    "inversion": [
+      {
+        "tipo": "Profesionales y público en general:",
+        "monto": "s/230. 00"
+      },
+      {
+        "tipo": "Alumnos de pregrado:",
+        "monto": "s/200. 00"
       }
     ],
     "profesor": [
@@ -67,6 +78,7 @@
     "fecha_inicio": "01 de Febrero del 2020",
     "fecha_cierre": "31 de Enero del 2020",
     "lugar": "Av. Petit Thouars 1775 - Of. 1001 - Lince",
+    "inscripcion": "https://forms.gle/fMJ9htZevhKPSZRR7",
     "horarios": [
       {
         "dia": "Sábado 01 de Febrero",
@@ -87,6 +99,16 @@
       {
         "dia": "Sábado 29 de Febrero",
         "hora": "08:00 am - 01:00 pm"
+      }
+    ],
+    "inversion": [
+      {
+        "tipo": "Profesionales y público en general:",
+        "monto": "s/420. 00"
+      },
+      {
+        "tipo": "Alumnos de pregrado:",
+        "monto": "s/380. 00"
       }
     ],
     "profesor": [

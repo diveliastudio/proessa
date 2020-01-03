@@ -120,7 +120,7 @@ img.img-polaroid {
 	max-width:100%;
 }
 .navbar-default .navbar-toggle {
-    border-color: #ddd;
+    border-colosection.section-padding.gray-bgr: #ddd;
     margin-top: 16px;
 }
 /*  Header
@@ -595,7 +595,7 @@ section.hero-text h1{
 #content {
 	position:relative;
 	/* background: #ffffff; */
-	padding:50px 0 0px 0;
+	padding:30px 0 0px 0;
 }
  
 .cta-text {
@@ -789,6 +789,307 @@ form#commentform textarea {
 }
 
 
+
+/* ==========================================================================
+   Contact Us
+  ========================================================================== */
+.form-control {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  text-align: center;
+  border: 1px solid #ececec;
+  box-shadow: 6px 0px 43px rgba(131, 131, 131, 0.13);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.form-control:focus {
+  border: 1px solid #3c9cfd;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn.disabled, .btn:disabled {
+  opacity: 1;
+}
+
+textarea {
+  border-radius: 10px !important;
+  text-align: left !important;
+}
+
+.contact-info {
+  margin-bottom: 15px;
+}
+
+.contact-info i {
+  font-size: 20px;
+  color: #3c9cfd;
+}
+
+.contact-info h5 {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact-info p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+#contact {
+  background: #f8f8f8;
+  padding-bottom: 0px;
+  position: relative;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#contact .contact-block {
+  background: #ffffff;
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 43px 0px rgba(131, 131, 131, 0.23);
+}
+
+.offset-top {
+  margin-top: -250px;
+}
+
+/* Contact Map */
+#google-map-area {
+  position: relative;
+}
+
+#google-map-area .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#msgSubmit {
+  margin-bottom: 0;
+}
+
+
+
+/* ==========================================================================
+ Team Section
+   ========================================================================== */
+.single-team:hover .team-details {
+  opacity: 1;
+}
+
+.single-team {
+  position: relative;
+  margin: 15px 0;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  box-shadow: 0px 0px 16px rgba(131, 131, 131, 0.17);
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.single-team .team-thumb {
+  position: relative;
+}
+
+.single-team:hover {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  box-shadow: 0px 0px 16px rgba(131, 131, 131, 0.35);
+}
+
+.single-team img {
+  width: 100%;
+}
+
+.single-team .team-inner {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-team .team-details {
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-team .team-details .team-title {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #263238;
+}
+
+.single-team .team-details p {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.single-team .social-list {
+  position: absolute;
+  background-image: -moz-linear-gradient(0deg, #7054ff 0%, #2669ff 100%);
+  background-image: -webkit-linear-gradient(0deg, #7054ff 0%, #2669ff 100%);
+  background-image: -ms-linear-gradient(0deg, #7054ff 0%, #2669ff 100%);
+  border-top-right-radius: 30px;
+  bottom: 0;
+  left: -40px;
+  padding: 20px 0px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-team .social-list li a {
+  display: block;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  width: 40px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 0px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-team .social-list .facebook a:hover {
+  background: #4867aa;
+  color: #fff;
+}
+
+.single-team .social-list .twitter a:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.single-team .social-list .google-plus a:hover {
+  background: #dd4d42;
+  color: #fff;
+}
+
+.single-team .social-list .linkedin a:hover {
+  background: #007bb6;
+  color: #fff;
+}
+
+.single-team:hover .social-list {
+  left: 0;
+}
+
+#testimonial {
+  background: #f6fbfd;
+  padding-bottom: 80px !important;
+}
+
+.testimonial-item {
+  padding: 30px;
+  margin: 15px;
+  background: #fff;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0px 0px 16px #ececec;
+}
+
+.testimonial-item .author {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.testimonial-item .author .img-thumb {
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-item .author .img-thumb img {
+  border-radius: 50%;
+  width: 75%;
+}
+
+.testimonial-item .content-inner {
+  overflow: hidden;
+}
+
+.testimonial-item .content-inner .description {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.testimonial-item .content-inner span {
+  color: #566573;
+}
+
+.testimonial-item .content-inner .author-info {
+  padding: 3px 0;
+}
+
+.testimonial-item .content-inner .author-info h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+.testimonial-item .content-inner .author-info h2 a {
+  color: #484848;
+}
+
+.testimonial-item .content-inner .author-info h2 a:hover {
+  color: #3c9cfd;
+}
+
+.owl-pagination {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -20px;
+}
+
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 2px 4px;
+  filter: alpha(opacity=50);
+  opacity: 1;
+  border-radius: 30px;
+  background: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: #3c9cfd;
+}
+
+
+
+
 /* --- search form --- */
 .search{
 	float:right;
@@ -890,7 +1191,7 @@ form#commentform textarea {
 }
 section.section-padding.gray-bg {
     background: #ffffff;
-    padding: 60px;
+    padding: 30px 10px 10px 10px;
     color: #484848;
 }
  
@@ -1625,6 +1926,14 @@ article img.pull-right, article .align-right{
 }
 /*  Media queries 
 ============================= */
+.imgcurso{
+        max-width:550px;
+    }
+@media (min-width: 979px) and (max-width: 1200px) {
+.imgcurso{
+        max-width:450px;
+    }
+}
 
 @media (min-width: 768px) and (max-width: 979px) {
 
@@ -1632,8 +1941,13 @@ article img.pull-right, article .align-right{
 		background:none;
 		width:100%;
 	}
+.about-text{
+        padding-top:50px;
+    }
 
-
+.imgcurso{
+        max-width:500px;
+    }
 	
 	footer .widget form  input#appendedInputButton {
 		  display: block;
@@ -1661,6 +1975,18 @@ article img.pull-right, article .align-right{
 }
 
 @media (max-width: 767px) {
+.imgcurso{
+        max-width:400px;
+    }
+
+header .navbar-collapse  ul.navbar-nav {
+    float: left;
+    margin-right: 0;
+}
+
+.about-text{
+        padding-top:50px;
+    }
 .navbar-default .navbar-collapse{border-color: none;/* background: #05142b; */}
 .navbar-default .navbar-toggle .icon-bar {background-color: #868686;border-radius: 0;}
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -1696,7 +2022,7 @@ header  .navbar-nav > li > a{
 }
 
 .topbar ul.info li {
-    float: right;
+    float: left;
     padding-left: 30px;
     color: #b0b0b0;
     font-size: 0px;
@@ -1833,7 +2159,6 @@ padding-top: 3px;
   [class*="span"] {
 		margin-bottom:20px;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -1842,6 +2167,15 @@ padding-top: 3px;
 		margin-top:20px;
 	}
 
+
+
+    .about-text{
+        padding-top:30px;
+    }
+
+    .imgcurso{
+        max-width:100%;
+    }
 
 	.search{
 		float:left;
@@ -1880,7 +2214,7 @@ span.color {
 }
 .input-field label {
     color: #888;
-	font-size:14px;
+	font-size:20px;
 }
 .input-field {
     position: relative;
