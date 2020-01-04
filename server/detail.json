@@ -1,11 +1,23 @@
 {
   "one": {
     "nombre": "Diseño de sistemas de bombeo aplicados a saneamiento",
+    "slug": "diseno-de-sistemas-de-bombeo-aplicados-a-saneamiento",
     "descripcion": "En los proyectos de agua potable, alcantarillado e infraestructura en saneamiento, usualmente se requieren de sistemas de bombeo en varios de los procesos dentro del ciclo del consumo y desecho del agua, ya sean la impulsión de agua cruda, potable, aguas residuales, lodos, etc. En este curso ahondaremos en la ingeniería de detalle, para el correcto cálculo y selección de las bombas y sistemas de bombeo para las diferentes aplicaciones y situaciones específicas que se dan en la etapa de estudio en un proyecto de Saneamiento. Está dirigido a estudiantes, técnicos, ingenieros y público en general del área de diseño, construcción, operación y/o mantenimiento en la industria de la construcción.",
     "img": "bombeo.jpg",
     "fecha_inicio": "08 de Febrero del 2020",
     "fecha_cierre": "06 de Febrero del 2020",
     "lugar": "Av. Petit Thouars 1775 - Of. 1001 - Lince",
+    "formulario": "https://forms.gle/LQqWfK7Ekn4VaBQr9",
+    "costo": [
+      {
+        "desc": "Profesionales y público en general",
+        "monto": "S/ 230.00"
+      },
+      {
+        "desc": "Alumnos de pregrado",
+        "monto": "S/ 200.00"
+      }
+    ],
     "horarios": [
       {
         "dia": "Sábado 08 de Febrero",
@@ -62,11 +74,23 @@
   },
   "two": {
     "nombre": "Programación Multianual y Gestión de Inversiones Públicas en Formulación y Evaluación el Marco de Invierte.pe",
+    "slug": "invierte-pe",
     "descripcion": "Nuestro país no ha dejado de crecer en inversiones. Por ello el gobierno ha tomado medidas encaminadas a agilizar y simplificar los procesos de Inversión Pública y mantenerse al ritmo de este crecimiento. El antiguo Sistema Nacional de Inversión Pública (SNIP) fue un gran avance en América Latina, pero ha quedado desfasado. Para superarlo ha entrado en vigencia el nuevo Sistema Nacional de Programación Multianual y Gestión de Inversiones, conocido como INVIERTE.PE. El cual ha establecido nuevas formas y procedimientos de obligatorio cumplimiento por parte de las entidades y empresas del sector público, para agilizar, flexibilizar y rentabilizar la ejecución de proyectos de inversión. Este curso permitirá al participante actualizarse y/o aprender sobre el sistema INVIERTE.PE, a fin de fortalecer sus competencias profesionales para contribuir a la optimización de las inversiones públicas.",
     "img": "invierte.jpg",
     "fecha_inicio": "01 de Febrero del 2020",
     "fecha_cierre": "31 de Enero del 2020",
     "lugar": "Av. Petit Thouars 1775 - Of. 1001 - Lince",
+    "formulario": "https://forms.gle/fMJ9htZevhKPSZRR7",
+    "costo": [
+      {
+        "desc": "Profesionales y público en general",
+        "monto": "S/ 420.00"
+      },
+      {
+        "desc": "Alumnos de pregrado",
+        "monto": "S/ 380.00"
+      }
+    ],
     "horarios": [
       {
         "dia": "Sábado 01 de Febrero",

@@ -4,6 +4,7 @@
   "description": "Proessa Ingeniería",
   "main": "./bin/index.js",
   "scripts": {
+    "dev": "nodemon ./bin/index.js",
     "start": "node ./bin/index.js",
     "deploy": "gcloud app deploy"
   },

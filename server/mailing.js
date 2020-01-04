@@ -8,7 +8,7 @@ const EMAIL_RECEIVER = 'info@proessaingenieria.com';
 const EMAIL_SENDER = 'proessaingenieria@gmail.com';
 // dont change password
 // const SENDER_PASS = 'AagviXJ0A9cm';
-const SENDER_PASS = '#Proessa';
+const SENDER_PASS = 'proessita2020';
 
 const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',

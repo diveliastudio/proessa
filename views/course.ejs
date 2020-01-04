@@ -85,6 +85,14 @@
 					<i class="material-icons">date_range</i>&nbsp;<h5>Inicio de clases</h5>
 					<br>&nbsp;&nbsp;<span><%= details.fecha_inicio %></span>
 					<br><br>
+					<!-- <i class="material-icons">attach_money</i>
+					<i class="material-icons">local_atm</i> -->
+					<i class="material-icons">monetization_on</i>&nbsp;<h5>Costo</h5>
+					<% details.costo.forEach(function(money) { %>
+					<br>&nbsp;&nbsp;<span><%= money.desc %></span>
+					<br>&nbsp;&nbsp;<span><%= money.monto %></span>
+					<% }); %>
+					<br><br>
 					<i class="material-icons">timelapse</i>&nbsp;<h5>Cierre de inscripciones</h5>
 					<br>&nbsp;&nbsp;<span><%= details.fecha_cierre %></span>
 					<br><br>
@@ -93,8 +101,32 @@
 					<br><br>
 					<i class="material-icons">assignment</i>&nbsp;<h5>Horarios</h5>
 					<% details.horarios.forEach(function(sched) { %>
-					<br>&nbsp;&nbsp;<span><%= sched.dia %></span> : <span class="sched_hour"><%= sched.hora %></span>
+					<br>&nbsp;&nbsp;<span><%= sched.dia %></span>:
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="sched_hour"><%= sched.hora %></span>
 					<% }); %>
+					<br><br><br>
+					<a href="<%= details.formulario %>" target="_blank" class="btn btn-primary waves-effect waves-dark">inscripción</a>
+				</div>
+			</div>
+			<div class="col-md-8 col-md-offset-2 col-sm-12">
+				<div class="block-heading-two">
+					<h3><span>Pasos para la inscripción</span></h3>
+				</div>
+				<div class="detail_assig detail_steps">
+					<i class="material-icons">remove</i>&nbsp;<h5>Paso 1:</h5>
+					<span>LLenar el fromulario en el botón de "INSCRIPCIÓN"</span><br>
+					<i class="material-icons">short_text</i>&nbsp;<h5>Paso 2:</h5>
+					<span>Realizar el pago, por transferencia bancaria, interbancaria o depósito a la siguiente cuenta a nombre de "Proessa Ingeniería"</span>
+					<span class="cnt_spl">Interbank Cuenta Corriente:&nbsp;&nbsp;&nbsp;200-3002163959</span><br>
+					<span class="cnt_spl">Interbank CCI:&nbsp;&nbsp;&nbsp;003-200-003002163959-33</span>
+					<br>
+					<i class="material-icons">notes</i>&nbsp;<h5>Paso 3:</h5>
+					<span>Enviar el voucher (foto o escaneado, visible) por una de estas dos opciones:</span>
+					<span>Correo:&nbsp;&nbsp;&nbsp;<a target="_blank" href="mailto:info@proessaingenieria.com">info@proessaingenieria.com</a></span><br>
+					<span>WhatsApp:&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://wa.me/51912073401">+51 912073401</a></span>
+					<!-- <i class="material-icons">subject</i>&nbsp;<h5>Paso 4:</h5> -->
+					<br><br>
+					<i class="material-icons">move_to_inbox</i>&nbsp;<span>En el transcurso del día te enviaremos un correo con la confirmación de tu inscripción.</span>
 				</div>
 			</div>
 		</div>
@@ -129,6 +161,28 @@
 	}
 	.testimonials blockquote {
 		border: 1px solid #e3e3e3;
+	}
+	.detail_steps {
+		padding-left: 30px;
+	}
+	.detail_steps h5 {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.detail_steps i {
+		margin-left: -30px;
+	}
+	.detail_steps span {
+		display: inline-block;
+		font-size: 12px;
+	}
+	.detail_steps .cnt_spl {
+		font-weight: bold;
+		color: #101010;
+		font-size: 13px;
+	}
+	.detail_assig i.conf_fnl {
+		vertical-align: super;
 	}
 </style>
 
