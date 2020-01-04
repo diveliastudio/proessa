@@ -1926,6 +1926,14 @@ article img.pull-right, article .align-right{
 }
 /*  Media queries 
 ============================= */
+.imgcurso{
+        max-width:550px;
+    }
+@media (min-width: 979px) and (max-width: 1200px) {
+.imgcurso{
+        max-width:450px;
+    }
+}
 
 @media (min-width: 768px) and (max-width: 979px) {
 
@@ -1933,8 +1941,13 @@ article img.pull-right, article .align-right{
 		background:none;
 		width:100%;
 	}
+.about-text{
+        padding-top:50px;
+    }
 
-
+.imgcurso{
+        max-width:500px;
+    }
 	
 	footer .widget form  input#appendedInputButton {
 		  display: block;
@@ -1962,6 +1975,18 @@ article img.pull-right, article .align-right{
 }
 
 @media (max-width: 767px) {
+.imgcurso{
+        max-width:400px;
+    }
+
+header .navbar-collapse  ul.navbar-nav {
+    float: left;
+    margin-right: 0;
+}
+
+.about-text{
+        padding-top:50px;
+    }
 .navbar-default .navbar-collapse{border-color: none;/* background: #05142b; */}
 .navbar-default .navbar-toggle .icon-bar {background-color: #868686;border-radius: 0;}
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -1997,7 +2022,7 @@ header  .navbar-nav > li > a{
 }
 
 .topbar ul.info li {
-    float: right;
+    float: left;
     padding-left: 30px;
     color: #b0b0b0;
     font-size: 0px;
@@ -2134,7 +2159,6 @@ padding-top: 3px;
   [class*="span"] {
 		margin-bottom:20px;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -2143,6 +2167,15 @@ padding-top: 3px;
 		margin-top:20px;
 	}
 
+
+
+    .about-text{
+        padding-top:30px;
+    }
+
+    .imgcurso{
+        max-width:100%;
+    }
 
 	.search{
 		float:left;

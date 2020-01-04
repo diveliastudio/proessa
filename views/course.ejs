@@ -15,12 +15,12 @@
 		<div class="container">
 			<div class="row showcase-section">
 				<div class="col-md-6" >
-					<img src="<%= `img/cursos/${details.img}` %>" style="max-width: 500px;" alt="Docente fotografía">
+					<img src="<%= `img/cursos/${details.img}` %>" class="imgcurso" alt="Imagen Referencial Curso">
 				</div>
 				<div class="col-md-6">
 					<div class="about-text">
 						<!-- <h3><span class="color">Descripción</span></h3> -->
-						<p><%= details.descripcion %></p>
+						<p style="text-align:justify"><%= details.descripcion %></p>
 					</div>
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 				</div>
 				<% details.profesor.forEach(function(teach) { %>
 				<div class="testimonials">
-					<div class="active item">
+					<div class="active item" style="text-align:justify;">
 						<blockquote><p><%= teach.cv %></p></blockquote>
 						<div class="carousel-info">
 							<img alt="" src="<%= `img/cursos/${teach.foto}` %>" class="pull-left">
@@ -114,7 +114,7 @@
 				</div>
 				<div class="detail_assig detail_steps">
 					<i class="material-icons">remove</i>&nbsp;<h5>Paso 1:</h5>
-					<span>LLenar el fromulario en el botón de "INSCRIPCIÓN"</span><br>
+					<span>LLenar el formulario en el botón de "INSCRIPCIÓN"</span><br>
 					<i class="material-icons">short_text</i>&nbsp;<h5>Paso 2:</h5>
 					<span>Realizar el pago, por transferencia bancaria, interbancaria o depósito a la siguiente cuenta a nombre de "Proessa Ingeniería"</span>
 					<span class="cnt_spl">Interbank Cuenta Corriente:&nbsp;&nbsp;&nbsp;200-3002163959</span><br>
@@ -128,13 +128,13 @@
 					<br><br>
 					<i class="material-icons">move_to_inbox</i>&nbsp;<span>En el transcurso del día te enviaremos un correo con la confirmación de tu inscripción.</span>
 				</div>
+				<br><br>
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<%- include('partials/contact', {field: details.nombre, title: 'Escríbenos'}) %>
-	</div>
 </section>
+
+<%- include('partials/contact', {field: 'home', title: 'Envíanos un mensaje'}) %>
 
 <%- include('partials/footer') -%>
 
