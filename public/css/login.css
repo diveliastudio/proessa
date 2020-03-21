@@ -1,0 +1,63 @@
+:root {
+  --fondo-depth-1: #1a1c2f;
+  --fondo-depth-2: #1e2137;
+  --fondo-depth-3: #24273e;
+  --btn-color: #fc3955;
+  --btn-shadow: #fc395686;
+  --btn-txt-color: #ffffff;
+  --txt-color-depth-1: #767b92;
+  --txt-color-depth-2: #596291;
+  --txt-color-depth-3: #a5aedf;
+}
+body {
+  background-color: var(--fondo-depth-1);
+  margin: 0px;
+}
+.contenedor {
+  box-shadow: 8px 8px 20px #01010175;
+  margin: 8rem auto;
+  width: 320px;
+}
+.saludo {
+  color: var(--txt-color-depth-1);
+  background-color: var(--fondo-depth-2);
+  padding: 2em;
+}
+.formulario {
+  background-color: var(--fondo-depth-3);
+  padding: 2em;
+}
+.password {
+  margin: 1.5em 0em;
+}
+input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #2d3147;
+  width: 88%;
+  height: 2rem;
+  padding-left: 30px;
+  color: var(--txt-color-depth-2);
+  font-size: 18px;
+}
+input:focus {
+  outline: none;
+  color: var(--txt-color-depth-3);
+}
+input[type='text'] {
+  background: url(/img/done.svg) no-repeat scroll 0px 3px;
+}
+input[type='password'] {
+  background: url(/img/lock.svg) no-repeat scroll 0px 3px;
+}
+button {
+  background-color: var(--btn-color);
+  box-shadow: 5px 5px 4em var(--btn-shadow);
+  color: var(--btn-txt-color);
+  border: none;
+  border-radius: 0.2rem;
+  width: 100%;
+  height: 3rem;
+  isolation: isolate;
+  cursor: pointer;
+}

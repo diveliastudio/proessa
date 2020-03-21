@@ -7,6 +7,8 @@ const express = require('express'),
 const host = process.env.HOST || 'localhost',
   port = process.env.PORT || 8080;
 
+const { createConnection } = require('../db');
+
 const app = express();
 
 const generalPath = path.join(__dirname, '../')
@@ -34,8 +36,11 @@ function start() {
   // routes
   app.use(routes)
 
+  // database
+  createConnection();
+  
   // server
-  app.listen(8080)
+  app.listen(8080, () => console.log('Server running on port 8080'))
 }
 
 start();

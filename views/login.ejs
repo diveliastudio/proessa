@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%- include('partials/header_simple') -%>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <div class="contenedor">
+    <section class="saludo">Bienvenido</section>
+    <section class="formulario">
+      <form action="/login" method="POST">
+        <div class="username">
+          <input type="text" name="username" placeholder="Nombre de usuario">
+        </div>
+        <div class="password">
+          <input type="password" name="password" placeholder="Contraseña">
+        </div>
+        <button type="submit"><b>ENTRAR</b></button>
+      </form>
+    </section>
+  </div>
+
+  <%- include('partials/scripts') -%>
+</body>
+</html>

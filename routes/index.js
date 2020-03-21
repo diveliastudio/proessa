@@ -32,4 +32,6 @@ router.get('/nosotros', function (req, res) {
 //   res.render('services')
 // });
 
+router.use('/admin', require(base + 'server/admin'));
+
 module.exports = router;
